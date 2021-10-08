@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display&display=swap');
+
+:root {
+  --bg-color: #172A3A;
+  --text-color: #efefef;
+  --main-color: #09BC8A;
+}
+
+* {
+  font-family: 'Noto Sans Display', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+button {
+  background-color: var(--main-color);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: var(--bg-color);
+  font-weight: 500;
+  font-size: 1.2rem;
+  opacity: .95;
+  padding: 16px;
+  transition: padding .4s;
+}
+
+button:hover {
+  opacity: 1;
+  padding: 16px 26px;
+}
+
+button:focus,
+button:active {
+  border: 3px solid #1871b9;
+  opacity: 1;
+}
+
+
+.layout {
+  display: grid;
+  grid-template-rows: 70px 1fr 90px;
+  height: 100vh;
+}
+
+.layout > * {
+  width: 100%;
+}
+
+header {
+  align-self: center;
+  color: var(--main-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+}
+header h1 {
+  font-size: 1.3rem;
+}
+header span {
+  align-items: center;
+  background: var(--main-color);
+  border-radius: 50%;
+  color: var(--bg-color);
+  display: flex;
+  height: 32px;
+  justify-content: center;
+  margin: 0 10px;
+  width: 32px;
+}
+footer {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.emoji {
+  width: 2rem;
+}
